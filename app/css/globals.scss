@@ -1,6 +1,117 @@
 body {
-    background: #EFECCA;
-    color: #333;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: url('../../public/parchment-background.jpg');
+    background-size: cover;
+    font-family: 'Titillium Web';
     margin: 0;
+}
+
+.login {
+    text-align: center;
+
+    h2 {
+        color: #FFF;
+        margin-top: 65px;
+    }
+
+    &__facebook {
+        background: #3B5998;
+        border: 0;
+        border-radius: 5px;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 40px;
+        margin: 30px 0 10px;
+        padding: 10px 20px;
+
+        &--home {
+            font-size: 12px;
+            margin: 10px 0 0 10px;
+            padding: 5px 10px;
+        }
+    }
+
+    &__offline {
+        background: #FFF;
+        border: 0;
+        border-radius: 5px;
+        color: #333;
+        cursor: pointer;
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+    }
+
+    &__subtext {
+        background: rgba(255, 255, 255, .5);
+        border-radius: 10px;
+        margin: 0 auto 30px;
+        padding: 5px 10px;
+        width: 330px;
+    }
+}
+
+.fb-share {
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1;
+
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #354c8c;
+    vertical-align: top;
+    white-space: nowrap;
+
+    color: #fff;
+    background: linear-gradient(#4c69ba, #3b55a0);
+
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    padding: 5px 5px 0 4px;
+
+    border: 0;
+    border-radius: 2px;
+    margin-left: 15px;
+}
+
+.fb-share span {
+    margin-left: 3px;
+    position: relative;
+    top: -3px;
+}
+
+.fb-share .ico {
+    background-image: url(//fbstatic-a.akamaihd.net/rsrc.php/v2/y5/r/KxVPs0eEy36.png);
+    background-size: 30px 72px;
+    background-repeat: no-repeat;
+    background-position: 0 -42px;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-top: -2px;
+}
+
+@media (max-width: 1035px) {
+    body {
+        background: url('../../public/parchment-background-smaller.jpg');
+        background-size: auto;
+    }
+
+    .login {
+        &__facebook,
+        &__offline {
+            font-size: 25px;
+        }
+
+        &__facebook--home {
+            font-size: 12px;
+        }
+
+        &__subtext {
+            font-size: 13px;
+            width: 200px;
+        }
+    }
 }

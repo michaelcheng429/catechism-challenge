@@ -1,52 +1,132 @@
-.home {
-    &__banner {
-        background: #A7A37E;
-        height: 200px;
-        margin: 30px auto;
-        padding-bottom: 30px;
+.challenge {
+    &__container {
         text-align: center;
-        width: 70%;
     }
 
-    &__logo-image {
-        background: url('../images/panda.png');
-        background-repeat: no-repeat;
+    &__user-data-container {
         display: inline-block;
-        height: 85px;
-        margin-right: 10px;
-        position: relative;
-        top: 10px;
-        width: 85px;
+        left: 10px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50px;
     }
 
-    &__banner-heading {
+    &__user-data {
+        align-items: center;
+        display: flex;
+        padding: 5px;
+    }
+
+    &__user-high-score {
         color: #FFF;
-        display: inline-block;
-        font-size: 70px;
-        margin-bottom: 10px;
+        margin-left: 15px;
     }
 
-    &__tagline {
-        color: #EFECCA;
-        font-size: 30px;
+    &__delete-score {
+        cursor: pointer;
+        height: 12px;
+        margin-left: 15px;
+        width: 12px;
+    }
+
+    &__question {
+        font-size: 40px;
+        margin: 120px 0 20px;
+    }
+
+    &__input {
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid #333;
+        border-radius: 4px;
+        color: #FFF;
+        font-family: 'Titillium Web';
+        font-size: 26px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        padding-bottom: 6px;
+        text-align: center;
+        width: 600px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &--error {
+            border-bottom: 2px solid red;
+        }
+    }
+
+    &__answer {
+        color: green;
+        font-size: 26px;
+    }
+
+    &__wrong-word {
+        color: red;
+        font-size: 26px;
+    }
+
+    &__reset {
+        background: transparent;
+        border: 1px solid #333;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 10px;
+
+        &:hover {
+            border: 1px solid #FFF;
+            color: #FFF;
+        }
+    }
+
+    &__practice-link {
+        margin-top: 15px;
+
+        a {
+            color: #333;
+            text-decoration: none;
+
+            &:hover {
+                color: #FFF;
+            }
+        }
     }
 }
 
-.users {
-    margin: 0 auto;
-    width: 600px;
+.fb-share-button {
+    left: 145px;
+    position: absolute;
+    top: 50px;
+}
 
-    &__form {
+.practice {
+    &__actions {
+        margin-top: 20px;
+    }
+
+    &__select-form {
+        display: inline-block;
+        margin-left: 20px
+    }
+
+    &__select {
+        font-size: 20px;
         text-align: center;
+        width: 150px;
     }
+}
 
-    &__table {
-        margin: 0 auto;
-    }
+@media (max-width: 1035px) {
+    .challenge {
+        &__question {
+            font-size: 30px;
+            margin-top: 75px;
+        }
 
-    &__row {
-        &--active {
-            color: blue;
+        &__input {
+            font-size: 18px;
+            width: 80%;
         }
     }
 }

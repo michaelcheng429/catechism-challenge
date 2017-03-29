@@ -1,5 +1,5 @@
 .main-nav {
-    background: #002F2F;
+    background: #493921;
     height: 40px;
     width: 100%;
 
@@ -12,5 +12,15 @@
         display: inline-block;
         padding: 10px 15px;
         text-decoration: none;
+
+        &--active {
+            color: yellow;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .main-nav > .main-nav__link {
+        display: none;
     }
 }

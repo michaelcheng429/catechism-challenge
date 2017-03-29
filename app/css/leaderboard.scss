@@ -1,0 +1,43 @@
+.leaderboard {
+    margin-top: 60px;
+
+    &__card {
+        align-items: center;
+        border: 1px solid #333;
+        display: flex;
+        margin: 0 auto 15px;
+        padding: 10px 20px;
+        width: 700px;
+    }
+
+    &__card-rank {
+        color: #FFF;
+        font-size: 40px;
+        margin-right: 20px;
+    }
+
+    &__card-picture {
+        border-radius: 50%;
+    }
+
+    &__card-name {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    &__card-data {
+        color: #FFF;
+        flex-grow: 1;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    &__card-number {
+        font-size: 20px;
+        margin-right: 3px;
+    }
+
+    &__card-question {
+        font-size: 25px;
+    }
+}

@@ -5,7 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     devtool: 'inline-source-map',
     entry: [
-        'webpack-dev-server/client?http://127.0.0.1:8080/',
+        'webpack-dev-server/client?http://127.0.0.1:8090/',
         'webpack/hot/only-dev-server',
         './app/components/index.jsx'
     ],
@@ -60,7 +60,7 @@ module.exports = {
     devServer: {
         hot: true,
         proxy: {
-            '*': 'http://127.0.0.1:' + (process.env.PORT || 3000)
+            '*': 'http://127.0.0.1:' + (process.env.PORT || 4000)
         },
         host: '127.0.0.1'
     }
